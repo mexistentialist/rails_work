@@ -1,0 +1,14 @@
+<h1>All of our employees</h1>
+
+<% @employees.each do |employee| %>
+<ul>
+	<li><%=employee.first_name%></li>
+	<li><%=employee.last_name%></li>
+	<li><%=employee.email%></li>
+	<li><%=employee.job_title%></li>
+	<li><%=employee.salary%></li>
+	<li><%=employee.phone_number%></li>
+	<li><%=employee.gender%></li>
+</ul>
+<br/>
+<% end %>
